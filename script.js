@@ -180,7 +180,7 @@ const CATEGORY_IMAGES={
   "الصوص":OFFICIAL_IMAGES.default,
   "مشروبات باردة":OFFICIAL_IMAGES.times
 };
-const branchPhones{
+const branchPhones={
  "الجزائر":"07711111828","بصرة تايمز سكوير":"07729292929","الجبيلة":"07729292929","الزبير":"07719523849"
 };
 const branchMaps={
