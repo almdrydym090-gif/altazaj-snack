@@ -1,248 +1,119 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#e51f2b">
-<meta name="description" content="الطازج سناك — المنيو، العروض، الفروع والطلب في البصرة.">
-<meta property="og:title" content="الطازج سناك | البصرة">
-<meta property="og:description" content="المنيو والعروض والفروع والطلب من الطازج سناك.">
-<meta property="og:type" content="website">
-<title>الطازج سناك | البصرة</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09090a"><meta name="description" content="الطازج سناك — المنيو، العروض والفروع في البصرة.">
+<title>الطازج سناك | ALTAZAJ SNACK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"الطازج سناك","servesCuisine":["Fast Food","Pizza","Sandwiches"],"telephone":"+9647711111828","address":{"@type":"PostalAddress","addressLocality":"Basrah","addressCountry":"IQ"},"url":"https://almdrydym090-gif.github.io/altazaj-snack/"}
-</script>
 </head>
 <body>
-<div class="topbar">
-  <span>الطازج سناك • طعم يعرفه أهل البصرة</span>
-  <a href="#branches">شوف فروعنا ↗</a>
-</div>
+<div class="grain"></div>
 
-<header class="header">
-  <a class="brand" href="#home" aria-label="الطازج سناك">
-    <img class="brand-logo" src="https://imagedelivery.net/WTyNS1A4BnBF4BmXiRPGJA/105b679b-d236-4b80-9c01-7aa6aa305d00/xxl" alt="شعار الطازج سناك">
-    <span class="brand-text"><b>الطازج سناك</b><small>restaurant & snack</small></span>
-  </a>
-  <nav>
-    <a class="active" href="#home">الرئيسية</a>
-    <a href="#menu">المنيو</a>
-    <a href="#offers">العروض</a>
-    <a href="#branches">الفروع</a>
-    <a href="#about">عن الطازج</a>
-  </nav>
-  <div class="header-actions">
-    <a class="phone" href="tel:+9647711111828">0771 111 1828</a>
-    <button class="cart-btn" type="button" onclick="openCart()">السلة <span id="cartCount">0</span></button>
-    <button class="menu-toggle" type="button" onclick="toggleNav()" aria-label="فتح القائمة">☰</button>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#home">
+      <span class="brand-logo"><img src="data:image/jpeg;base64,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" alt="الطازج سناك"></span>
+      <span class="brand-word"><b>الطازج سناك</b><small>RESTAURANT & SNACK</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a data-nav class="active" href="#home">الرئيسية</a>
+      <a data-nav href="#menu">المنيو</a>
+      <a data-nav href="#offers">العروض</a>
+      <a data-nav href="#branches">الفروع</a>
+      <a data-nav href="#about">عن الطازج</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-button" onclick="toggleSearch()" aria-label="بحث">⌕</button>
+      <button class="header-cart" onclick="openCart()">السلة <span id="cartCount">0</span></button>
+      <button class="menu-toggle" onclick="toggleNav()" aria-label="القائمة">☰</button>
+    </div>
+  </div>
+  <div id="searchPanel" class="search-panel">
+    <input id="search" placeholder="ابحث عن وجبتك..." aria-label="البحث في المنيو">
+    <span>اكتب اسم الصنف ثم اضغط Enter أو ESC للخروج</span>
   </div>
 </header>
 
 <main>
 <section id="home" class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-copy">
-    <span class="eyebrow">ALTAZAJ SNACK • BASRAH</span>
-    <h1>طعم يعرفه<br><em>أهل البصرة.</em></h1>
-    <p>من البرجر والكرسبي إلى الصاج والبيتزا — اختار وجبتك، حدد فرعك، وخلي الطلب يوصل للمطعم مباشرة.</p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#menu">تصفح المنيو <span>←</span></a>
-      <a class="btn glass" href="#branches">الفروع</a>
-    </div>
-    <div class="hero-stats">
-      <div><b>2008</b><span>بداية الفرع الرئيسي</span></div>
-      <div><b>4</b><span>فروع ضمن هذه النسخة</span></div>
-      <div><b>+50</b><span>صنف في المنيو</span></div>
-    </div>
-  </div>
-  <div class="hero-visual">
-    <div class="hero-image">
-      <img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg" alt="الطازج سناك" fetchpriority="high">
-    </div>
-    <div class="hero-badge">
-      <span>عرض الموسم</span>
-      <b>فاهيتا × 2</b>
-      <small>الثاني بـ 1000 د.ع</small>
-    </div>
-  </div>
-</section>
-
-<section id="offers" class="section offers-section">
-  <div class="section-head">
-    <div><span class="kicker">HOT DEALS</span><h2>عروض تفتح النفس</h2></div>
-    <p>نحافظ على هوية المطعم، ونخلي العروض واضحة من أول ثانية.</p>
-  </div>
-  <div class="offers-grid">
-    <article class="offer-main">
-      <img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/fajita-offer.jpg" alt="عرض الفاهيتا من الطازج" loading="lazy">
-      <div class="offer-overlay"></div>
-      <div class="offer-copy">
-        <span>OFFICIAL OFFER</span>
-        <h3>فاهيتا<br>مرتين أحلى.</h3>
-        <p>أشتري ساندويج فاهيتا واحصل على الساندويج الثاني بـ 1000 د.ع.</p>
-        <button class="offer-btn" type="button" onclick="focusCategory('ساب الساندويش')">وصلني للمنيو</button>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span> ALTAZAJ SNACK / BASRAH</div>
+      <h1>طعم<br><em>يعرفه.</em></h1>
+      <p>من أول برجر إلى آخر صوص. منيو مرتب، فروع واضحة، وتجربة مصممة للموبايل قبل أي شيء.</p>
+      <div class="hero-buttons">
+        <a class="hero-primary" href="#menu">شوف المنيو <b>↙</b></a>
+        <a class="hero-secondary" href="#branches">اختار الفرع <b>↗</b></a>
       </div>
-    </article>
-    <article class="offer-side">
-      <div class="side-pattern"></div>
-      <span>مزاجك يختار</span>
-      <h3>من أول<br>لقمة.</h3>
-      <p>برجر، كرسبي، صاج، بيتزا، أطباق غربية وأكثر.</p>
-      <a href="#menu">استكشف كل الأصناف ←</a>
-    </article>
+      <div class="hero-bottom">
+        <div><strong>2008</strong><span>من الجزائر</span></div><div><strong>18+</strong><span>قسم بالمنيو</span></div><div><strong>4</strong><span>فروع بهذه النسخة</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-orb"></div><div class="hero-orb small"></div>
+      <div class="hero-photo"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg" alt="الطازج سناك" fetchpriority="high"></div>
+      <div class="floating-card"><span>HOT</span><b>فاهيتا</b><small>العرض المنشور من الشركة</small></div>
+    </div>
   </div>
 </section>
 
-<section id="menu" class="section menu-section">
-  <div class="section-head menu-head">
-    <div><span class="kicker">THE MENU</span><h2>منيو الطازج</h2></div>
-    <div class="search">
-      <span>⌕</span>
-      <input id="search" aria-label="البحث في المنيو" placeholder="ابحث عن وجبة..." oninput="renderMenu()">
-    </div>
+<section id="offers" class="offer-section">
+  <div class="offer-inner">
+    <div class="offer-text"><span>01 / OFFER</span><h2>فاهيتا<br><em>مرتين أحلى.</em></h2><p>العرض المنشور على موقع شركة الطازج العراقية: اشتري ساندويج فاهيتا واحصل على الثاني بـ 1000 د.ع.</p><button onclick="focusCategory('ساب الساندويش')">تصفح الفاهيتا ↙</button></div>
+    <div class="offer-photo"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/fajita-offer.jpg" alt="عرض فاهيتا الطازج" loading="lazy"></div>
   </div>
-  <div class="menu-note"><span>ملاحظة</span><p>الأصناف التي يظهر سعرها «حسب الاختيار» تحتاج تحديد الحجم/الخيار عند الطلب، لذلك لا نضع لها سعراً من عندنا.</p></div>
-  <div id="chips" class="chips"></div>
-  <div id="menuGrid" class="menu-grid"></div>
+</section>
+
+<section id="menu" class="menu-section">
+  <div class="section-head"><div><span>02 / MENU</span><h2>اختار مزاجك.</h2></div><p>الأسعار والأصناف مرتبة على أساس القائمة المنشورة المتاحة حالياً. الأصناف المتغيرة تبقى «حسب الاختيار» بدل التخمين.</p></div>
+  <div class="menu-shell">
+    <div id="chips" class="chips"></div>
+    <div id="menuGrid" class="menu-grid"></div>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="section-head"><div><span>03 / THE PLACE</span><h2>مو بس أكل.</h2></div><p>صور منشورة على موقع شركة الطازج العراقية الرسمي.</p></div>
+  <div class="showcase-grid">
+    <figure class="show-main"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A8%D9%8A%D9%83%D8%B1%D9%8A-%D9%88-%D9%85%D8%B7%D8%B9%D9%85-scaled.jpg" alt="واجهة الطازج" loading="lazy"><figcaption>الفرع الرئيسي / الجزائر</figcaption></figure>
+    <figure><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D9%85%D9%88%D9%84.jpg" alt="فرع مول بصرة تايمز سكوير" loading="lazy"><figcaption>تايمز سكوير</figcaption></figure>
+    <figure><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D8%AC%D8%A8%D9%8A%D9%84%D8%A9.jpg" alt="فرع الجبيلة" loading="lazy"><figcaption>الجبيلة</figcaption></figure>
+  </div>
+</section>
+
+<section id="branches" class="branches-section">
+  <div class="section-head light"><div><span>04 / BRANCHES</span><h2>وين نلكاك؟</h2></div><p>اضغط على الفرع حتى تحدده للطلب، أو افتح الخريطة للوصول إليه.</p></div>
+  <div class="branches-grid">
+    <article class="branch-card active" data-branch="الجزائر" onclick="setBranch('الجزائر')"><div class="branch-image"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg" alt="الفرع الرئيسي" loading="lazy"></div><div class="branch-info"><span>01 / MAIN</span><h3>الجزائر</h3><p>مقابل مستشفى ابن غزوان للولادة</p><div class="branch-foot"><strong>0771 111 1828</strong><a href="tel:+9647711111828">اتصال</a><a href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Basrah" target="_blank" rel="noopener">خريطة ↗</a></div></div></article>
+    <article class="branch-card" data-branch="بصرة تايمز سكوير" onclick="setBranch('بصرة تايمز سكوير')"><div class="branch-image"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D9%85%D9%88%D9%84.jpg" alt="تايمز سكوير" loading="lazy"></div><div class="branch-info"><span>02 / MALL</span><h3>بصرة تايمز سكوير</h3><p>داخل مول بصرة تايمز سكوير</p><div class="branch-foot"><strong>0772 929 2929</strong><a href="tel:+9647729292929">اتصال</a><a href="https://www.google.com/maps/search/?api=1&query=Basra+Times+Square+Mall" target="_blank" rel="noopener">خريطة ↗</a></div></div></article>
+    <article class="branch-card" data-branch="الجبيلة" onclick="setBranch('الجبيلة')"><div class="branch-image"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D8%AC%D8%A8%D9%8A%D9%84%D8%A9.jpg" alt="الجبيلة" loading="lazy"></div><div class="branch-info"><span>03 / JUBAILA</span><h3>الجبيلة</h3><p>مقابل شارع شهادة الجنسية</p><div class="branch-foot"><strong>0772 929 2929</strong><a href="tel:+9647729292929">اتصال</a><a href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Jubaila+Basrah" target="_blank" rel="noopener">خريطة ↗</a></div></div></article>
+    <article class="branch-card" data-branch="الزبير" onclick="setBranch('الزبير')"><div class="branch-image abstract"><b>AL<br>ZUBAIR</b></div><div class="branch-info"><span>04 / AL ZUBAIR</span><h3>الزبير</h3><p>شارع الجاهزة — مقابل دائرة الكهرباء</p><div class="branch-foot"><strong>0771 952 3849</strong><a href="tel:+9647719523849">اتصال</a><a href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Al+Zubair+Basrah" target="_blank" rel="noopener">خريطة ↗</a></div></div></article>
+  </div>
 </section>
 
 <section id="about" class="about-section">
-  <div class="about-image">
-    <img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A8%D9%8A%D9%83%D8%B1%D9%8A-%D9%88-%D9%85%D8%B7%D8%B9%D9%85-scaled.jpg" alt="الطازج سناك" loading="lazy">
-  </div>
-  <div class="about-copy">
-    <span class="kicker">OUR STORY</span>
-    <h2>من البصرة.<br><em>ولأهل البصرة.</em></h2>
-    <p>بحسب صفحة أعمال شركة الطازج العراقية، افتتح الفرع الرئيسي في الجزائر مقابل مستشفى ابن غزوان سنة 2008، ثم توسعت التجربة بفروع أخرى في البصرة.</p>
-    <div class="about-points">
-      <div><b>2008</b><span>افتتاح الفرع الرئيسي</span></div>
-      <div><b>2015</b><span>افتتاح فرع تايمز سكوير</span></div>
-      <div><b>2016</b><span>افتتاح فرع الجبيلة</span></div>
-    </div>
-  </div>
+  <div class="about-copy"><span>05 / OUR STORY</span><h2>بدأت<br><em>من البصرة.</em></h2><p>بحسب شركة الطازج العراقية، افتتح الفرع الرئيسي في الجزائر مقابل مستشفى ابن غزوان سنة 2008، ثم توسعت التجربة مع فروع أخرى في البصرة. التفاصيل هنا مبنية على المعلومات المنشورة من الشركة.</p><div class="story-line"><div><b>2008</b><span>الجزائر</span></div><i></i><div><b>2015</b><span>تايمز سكوير</span></div><i></i><div><b>2016</b><span>الجبيلة</span></div></div></div>
+  <div class="about-photo"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg" alt="الطازج سناك" loading="lazy"><div class="about-badge">FRESH<br><strong>SNACK</strong></div></div>
 </section>
 
-<section id="branches" class="section branches-section">
-  <div class="section-head">
-    <div><span class="kicker">OUR BRANCHES</span><h2>فروع الطازج</h2></div>
-    <p>حدد الفرع الأقرب إلك، شوف الموقع، وبعدها كمل طلبك من السلة.</p>
-  </div>
-  <div class="branch-grid">
-    <article class="branch featured">
-      <div class="branch-number">01</div>
-      <div class="branch-content">
-        <span>الفرع الرئيسي</span>
-        <h3>الجزائر</h3>
-        <p>مقابل مستشفى ابن غزوان للولادة</p>
-        <div class="branch-meta"><small>📞 0771 111 1828</small><small>10:00 ص — 12:30 ليلًا</small></div>
-      </div>
-      <div class="branch-actions">
-        <button class="branch-order" type="button" onclick="selectBranch('الجزائر')">اختيار الفرع</button>
-        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Basrah" target="_blank" rel="noopener">الخريطة ↗</a>
-      </div>
-    </article>
-    <article class="branch">
-      <div class="branch-number">02</div>
-      <div class="branch-content">
-        <span>الفرع الثاني</span>
-        <h3>بصرة تايمز سكوير</h3>
-        <p>داخل مول بصرة تايمز سكوير</p>
-        <div class="branch-meta"><small>فرع المول</small></div>
-      </div>
-      <div class="branch-actions">
-        <button class="branch-order" type="button" onclick="selectBranch('بصرة تايمز سكوير')">اختيار الفرع</button>
-        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=Basra+Times+Square+Mall" target="_blank" rel="noopener">الخريطة ↗</a>
-      </div>
-    </article>
-    <article class="branch">
-      <div class="branch-number">03</div>
-      <div class="branch-content">
-        <span>الفرع الثالث</span>
-        <h3>الجبيلة</h3>
-        <p>مقابل شارع شهادة الجنسية</p>
-        <div class="branch-meta"><small>📞 0772 929 2929</small><small>10:00 ص — 12:30 ليلًا</small></div>
-      </div>
-      <div class="branch-actions">
-        <button class="branch-order" type="button" onclick="selectBranch('الجبيلة')">اختيار الفرع</button>
-        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Jubaila+Basrah" target="_blank" rel="noopener">الخريطة ↗</a>
-      </div>
-    </article>
-    <article class="branch">
-      <div class="branch-number">04</div>
-      <div class="branch-content">
-        <span>فرع الزبير</span>
-        <h3>الزبير</h3>
-        <p>شارع الجاهزة — مقابل دائرة الكهرباء</p>
-        <div class="branch-meta"><small>الزبير</small></div>
-      </div>
-      <div class="branch-actions">
-        <button class="branch-order" type="button" onclick="selectBranch('الزبير')">اختيار الفرع</button>
-        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Al+Zubair+Basrah" target="_blank" rel="noopener">الخريطة ↗</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="cta">
-  <div><span>جاهز للطلب؟</span><h2>خلّي الجوع<br><em>على الطازج.</em></h2></div>
-  <button class="btn white" type="button" onclick="openCart()">افتح السلة ←</button>
-</section>
+<section class="closing"><div><span>ALTAZAJ SNACK</span><h2>اختار وجبتك.<br><em>الباقي علينا.</em></h2></div><button onclick="openCart()">افتح السلة ↙</button></section>
 </main>
 
 <footer class="footer">
-  <div class="footer-brand">
-    <img class="footer-logo" src="https://imagedelivery.net/WTyNS1A4BnBF4BmXiRPGJA/105b679b-d236-4b80-9c01-7aa6aa305d00/xxl" alt="شعار الطازج سناك">
-    <div><b>الطازج سناك</b><small>restaurant & snack</small></div>
-  </div>
-  <div class="footer-links">
-    <a href="#menu">المنيو</a><a href="#offers">العروض</a><a href="#branches">الفروع</a><a href="https://wa.me/9647711111828" target="_blank" rel="noopener">واتساب</a><a href="tel:+9647711111828">اتصل بنا</a>
-  </div>
-  <div class="footer-copy">© 2026 الطازج سناك</div>
+  <div class="footer-brand"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wgARCAGAAaQDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUGAQMEAgf/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/2gAMAwEAAhADEAAAAbOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAx5PSIiqdNkzVOiu1qxAcU52HdVvcaWxXZK/NIsLY5AAAAAAAAAAAAAAAAAAAw5olXtXjL1MsKdGWBlgZYGejmTEhO1Loty2rPn1t5oAAAAAAAAAAAAAAAADGcHiryMRj6OGVOzDIwzHWy7vUJ32x7GWfXhkYk43utjNdOPW3khMAAAAAAAAAAAAAAAAPOeGLV/Wxz+1nHn1MZEWxFS3NfmjPWG3lzbh7MPY9Cur15Fp6qpZ9/J2C2AAAAAAAAAAAAAAAAGIiXha7wunfoy7+gV2BIGmP98+3lM+c355LphZDL0OpnGfanIOVtzzmY7v28z2JqAAAAAAAAAAAAAABiGmo2u1c850Zeju9cPRNOhr913z49x858mDfyGzx2RfHLNRVOnq7OHtp1Zm4OZRNDfygAAAAAAAAAAAAAAAHj3gp+iywWPqxWmYxOfNu0R80lIstzYFss9/B1V23cfvurtuGXo5tUDZdfPyNOIAAAAAAAAAAAAAAABjOBHdfiNKukY3D1mraTy56dc5RGM438nPRzdMaSeTn9kTU59vUzv44TAAAAAAAAAAAAhCbQnedit2QAAAxo6MRNdj7lF590E6eanY8e8RMJj356fDdXLKU6N+d85n3ckzHd23mbGMzQAr0qdip2o9I6PLCAAQROouMLOjJMAAK9Hlxptir56lYuSKv9DoFwO98+vx7AAMGcZGOPtxEwfJZ1ej5z09sPbHslUqrJat3iY+ce7dBEtPfNOw+g4iZY+b2rRKFD+l/NfpZBQk1Xz6AqHAX589lS21G2Vo1wkpxkxZqxZwBwd8cU258Am6vY4A1SkNOlRu/z/6QVeWlq2e7BQL+ZBX4Hu4S4V2bop9Aq1noR9Nzo3lcqd+pR03H5/8AQzp4uylnJy994KBqtcifPPoPTk+c2Cu3gof0b51dTmq9hrxbevdghKze6QWzk1YOX3ySZutFVtQBxVW3003+Mejk5ZfYabhDTp81mpOpl5p/FsE1u2nI68leWH0RURbxEw1q1nfM8Heealb+IqtoiJAlaLe66a7L81nDilffWTEbI1wrt9pl9PmL6WPmfr6T6Pmz6Xg+Z7/ono+bePpmD57O2OJIa5U64gADGRjIAPPocu/2AAAAAAAIzxLBjIrlf+h4PmefpY5NMkIqVAAAAAADGQAAAAAAMZAAAAAAAAADGQaTc8+gAAAAAAA8ewDzDS8OTfj3EGqaqNjO2Jlq0THdCTZWpPkkTs4+yDNkxTbkauf3XyxdEZJkTIQ0+IWZqhYuqvWEjdOjBYOXqwVK21izmahZK4d89SrqYg5qpFr3cXaQ+7iwWDn6Ik0zdLuR6hZWvk/v1bSvSdbsBJMBq3BjI4ez0McnYNW0PGnpDVtHF2hji7h49hp3A4+wadwaW4AcnVkY4+0c3RkY4e8efQaW4PHscPbkY5esa9gacbwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/8QALhAAAgICAAQEBgIDAQEAAAAAAgMBBAAFEBESExQVIFAhIjAxMzQjMiQ1gEBg/9oACAEBAAEFAv8Ar4nLEVMhoZM8orv72dz+b2yZgYbdw2GfBbTXkXGYRkeCUjPdPrTZkCOe672lzhVDWk2foqcSsC0yDBgH7O90KAiky+omek4nnHshFAi1ktP1QUT667pgUr7Y+yXmfH1OPnOKZz9VYYnI+3sczygy6y4RxmOcMDonI+E+mPhNdncV7HcLpRw6sj0ODqjgDvhBQXpSztMAoMfYthPyzkfPPqJYlLIiD4KZ1emm0YXExPsV/wDtP2H5J9TGSU+hbefoqKBg+FgZHn0+wbDC55BCWdORPoP+nEY6iJE59sQfPjr/AOvsV4eaZIYwu0WdUhncHO4GRPPg4+c8a8fHGzzNA8df7GUdQtVAslYzhpmM+0xKpyCDGHED6EkIg1kdID1F9uKA6Fex20SzCGRLJjnjFD0+oijtAqSwFwHGqvrd7LYrQfolYTkoHCWML4qGCn0V1dpfsjBKcUySy9EQ30M/HxR+TjURy9navuQ5DvSX9eNePn4Vqv8A7Lt6azaV0rLbTuwitsiY/wCk6pBYSGh6J+E8Ex0gtJsxNYV4y6hTQMTH0O2cLdFgCr+an1R8YuWfDLqbAnP9N28VdtK34qGbQgdTteKj17b9rT/n2v6dT9v6ja4NyaJYVZo44ZFtVffwK/Tc14CyxjThS2HLGKcxJVtkB5E844MEhbXSSddg/wBdv+vrY/zfTuB/m08/PYjlZ0329FjZQsvMbRZTYxqdv+xp/wAu2/Uo/uXWymsm01TAnqD6m2HlZWZLZdgbVXXhAVMIYKG61B47XsXkxIzXtNRNe+p3CdirvG4HUo+8fbcfgpuFD2bVk4V2yWeLsRlbZHBRPONzmpn/ACr8crmm9FmytI1pVDxtVuQGJjuPy6f820/TqT02rSe+ivrD7l95V00Lpubx2lhisRYd37bpRXjauxzSikq/Yg+G4D+LKdnsHWXC1ZasDXU6250iBnnhbGSlo8KYSFV35qYzGsyuXVX3H4Vj1sVrEjnga2WdZyjNU3rRuZ+Otnld2kcrmm+/GxTVYLypOeVJxCRQvcx8dR+zsh6qQz0kBQYZuC+SjPTc47ef8igPVc2Uc6WcurX4kutOXw7lNKTdMfAq8BCc2jOq1QreIaIiEWNiCmV7AWFyIzhT0jPzG0O1rsovXFPatWxa55M8SjPF18ZerhDC62aowAtsYmdKeVzcR/Pp/wC/C22U1vMrOeaPydlZnCuWCwjM81X7jB61mMgdG92YK7WgbdibDln22eauzzV2eaux7ieyu4kMbsGtXg7FsKzVl1U8mOcayOi7s1Qu1SnnTzYxyu6co5ZYpuUeqS0DzYH0U0R1WLMdVfjynOg8kDjOU54d0xKmRnSWVYnxW5j4akuVng8O4ny+znltnPLLGeVvyNU7Kmv7Dcv0e9hrNc4AGwg1UyPlMZ5SOeUjnlIZ5SvI1ScnVJzykMnU5Tr+GTwGuA2NwPw1k86WbWvJiBkBBtWxkbYcDZVyyJiY3BfLrx6rmdI50jnQGRERx5ejlHPZJNydeho2/pzEFnh0YIiP176JfX1oEurwta2CllZy85TkCU5VCV1rVQLOVaQVi9w5f/VkwAyJiY+vBDM8JnlAbEGHhmKw8yHBKCHHXhW2tYiwObV2VrYvLLD4rgq+Btxh9tY2BKqlsOVj7wJao+4vG7CAZXeFheWbY1yTfBjcsNhKqNyEhwZKRv63+NeTPKJ2Yc1HDF46+Km1rYWJxzYSodiEnwPYhBpZ3VZVmIv17EWOB/01P6ubMSKpEwSKYdutju1FnX2Ddw2366bCm8Ni4143l4jLMc6yrCo1eu/SyP8Ac8AcTi1H48t/7G9+7w1z1KDLXV4ZEUzppPvPw+XR1CkKjZdWxP8Atw/3ObFxpRa/EP8AVsTKtc9KUgQmGMWxj6LFnW4LWCx4eEr9URERh1UMkFgscIYKFoUucMBYIVUBPCalciEYAc7YdzgdVDCWsFxhLAjJQGXAqyCLgVSuREhRRk/HPB1ucRyjIWEM7YdzCGCiKdeJ4MrJYQiIDgrATBSwL/t7/8QAKBEAAgEDBAEDBAMAAAAAAAAAAQIDAAQREBIhMUATIkEgMjNgYXGA/9oACAEDAQE/Af3ZLV274prPjjultHzzTWfPFPAyHB8UAk4FQ24j5+fpKhhg1NbqRkeJaxYG46yyiMZqK63HDaz42c0Tk+Eq7mxXArOetLmLcuRpHKrjjWeL02/jwrb8gp/uGevonkRvtGlvcZ9raXIXZ7qYD4PgwHEgp2x0aWVf6oMD1U0gRdIl3sBVzCqDIq3z6fNXX4z4cTJKvPdNaDOVNNK0RwQKllMh50hbad1BHmbc3Wl4/O3w0JX3LUbb13UVB7poUAJA0ixvGdJZBGuTTEscnwwcc1DdfDUGDdUetLZdz1JOqVJIXOT4ysVORS3cgrf7s1kj/Dn/xAAhEQACAgIDAAIDAAAAAAAAAAABAgAREEASIDEhUUFggP/aAAgBAgEBPwH92Lic5zE5wNeszX2VtRz+MgXClZX3TPRDWCCMqb0m8g6KDhl+sL7pN5BKwos4JoRWJjexPdM2JzlAwCsNLC4QaZhFYs4PmAL1Sn10Y/ECkwCtfgJX8O//xAA5EAACAQEFBQcDAwMDBQAAAAABAgARAxASITEgIkFRYRMyUHFygZEEMDNCUmIUI4JAgKEkY3CSwf/aAAgBAQAGPwL/AHfE4hMQurDlQidn0r4bUmkpZj3M3mN24ZmAZvMTKqaTHiOKEvVqxVRslzNPCs9eU3j7faOGmcqxqJusD4PXjwmJjn93FhLUlfBSx0ExHbyO2bPCWHSZMxHXwXsx77dBpdhba3bTDacJn4ITCx47VJT7FRAePHwQ9cr8s9mo0yOyG4cZiXTwNBd/EbdZRb6HXZwsQCJl4Elxrpt5abNG12GxisrZuyze18BQzLbOxSZGt2E3v4HXkZmZrN1wRAazvCZXYRpsE3GkxXv4GQeMKsNJpMs5pOEyImRz2czKKZTYVfBAyDelDrdnCRtheM6bA5DPwYsve2NJkYdjPZpxOvgtUbCZhcUcQdRsn7HaP7eD60YaGYn3uuydit+O09h/rAgQHKsKFAKCsNpStIEdAA3L7dbPIzNPjYN/UzdHvKnNp1RxRVdbo9V9Gwr+LEpp2TRBKZwn0ishNjtwz4H43beABRjUFaC1lSut9FD2R9mXvMp17kYgrJ4fi+DD4NsW/H8/RzCliPEDeLwfCLDt4LF0GuAf15/zLITvLBBO6GOVegq4i6KHg/xurDZOJnBOu7wGl0dcp1I3x9WJ7/TxHARy4EDJXI+Gyia2HtN5vGuduJt9rkW3FQOS5Rt1DeoHCvTw8WbrDHAEYbuAJSG9MveQdV/wfF/dg3f1vFS7yNh2fy78kQmZ5lTJL3IypZpi9mFsIUB3XVkXmDbAAoKJhqbmSRtlwr8MpB7fL/kAkEcJo4iiKUSH+ztRtDdCCg6E/Z7S7sC/Hio7Y9medgztV96fK/LwnQexTtLnwkzPVDhZDv9fzZ8b95g8n50XZO+YzJtbiyKa2Cf5f3oqOrT2QWOI9o9ZCzvonasiTcz7J7S0QfU+4GkmVPPFK5u6bPrpdWVo2XLdFB6m02BjsvafqdoRFQtiN0F1d2ZQfZBFkAil+JuQASx3GYL9YlfVEp/W0/R6+BtcKgXDaRzzMcHTE7iKUO53/eLZ/W8rK8tEy0O67zIBYVw/gUFmI+su5BXgTbpWks2+Ija4RQmguEPvBNlqkdrgxfO4Gtn9of1pc8B/JCe6VO7TKs26zFnpDIjuXYvSGO/m5SNJvLPMzcFD0+5FRg09tOxBP2O0phEVmCj7AIuV8jBVSn6ERGnMdHatvJnoRfaeWSfEuXVT9Dz8DMkFbo8Ae0ORPacuy909gPtFtdX9ybA6PlO4K4o9jZoXVqhUnb7+C39pcp3T4J5Cp+dPX5GYZvG6dUhX0gqXsnWMNqLdcylKKhcXo2/wBkfmB547+0MnXAR1bZLoJiVWyZhcWjrAqYFxLPMh5NmgYsJQdYooGtrnBNLB8QowU0VxuzZmrqQkEgGxcSgxZXLJ5ZT2J8x6gCccVwFy4zyp6pjPIz9iTUrNn6rjqnVQcQaBHpaZmh4kei6yiJFG3SIxoWgM/QZ+gz+gY7MIqopeBUH8jTQ6CrI6940VDk0E5gVEc49gxgNe6cy6eXR7vQ/E38zPMRxMkTsV3FqmlbLad+bfrO+P3IudKqU9JWgmBYNh4+V6BsJ9IUhDzzBH1xLIekQIN0nslO89r3dwg/E9M/pcI5yj6v+TlF7zoIwFaI9ogeUYmhjpkEcr/ACLV4cx+b+gIDI9ojA9o8E3/ANSdxFrE1v7opOJ63Y80k+dAJsKPaA24yQGu4YnF/lDIJ+zaAlFbiTz0qlC6P2aAYL0l3/CXZmwweRrToeD5yVDzduu0P6jaK4/kOozolzev48BoXsr+dtvrR1lsbNp0SymKmG5WPSLUbuFkqyvaZQeROu6I6RtCQwoFWlV9Rp0JQYP/AFT4IPYhoScj/gK2sgONbBcFxzejoGmYAlnLK/HaVYFY6enh9l+80mgNog6URO7LOh3Z4yT10fuhAFLgRYaia52heJwujpmlxXrru2TSzOqDE3A1hHI6GgKwj10CGgo02rKJbLh3aop5UbrtAq97TWgIlAWywR0i+Gwy0zHfjfwk6RZKcDLHDjRqc+PYIBam6y0ZsNxXzleJa4nT5SfO/jSti0B2gS2UX8IPJNRw6Fu3UE2ZdGxsVaM+tg37SjIrJ00Xv7huAKltZ7jRjlr9iAEUrz7r76fs9jVv4oNp1F9Wn7/OEt5/7NHDDfbqtCLX3aqPHC+Ee0c1WXaPNd6IVJ5m8hTEzWn7HlCFHP4mmwS07Iq2jejPgTImQ9oI9HuStItnTcBDYcLhJtXYuiWU4ZuKC6NM5i9vpICAAwGlxoy4naSA0TnbIkXthVjTtxIQaQMOdd+UgQZ4DSvPCuvW4E5es7LoGmXQBxM0sjxqyRMta2JvJF+MKsQKKMEAEAjwxTMQCAAwGgwW08mBsXCnnonO2RJvYte7jYYGeA0w6QOZlYOOf93/AP/aAAwDAQACAAMAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMl6qf5MAAAAAAAAAAAAAAAAAAAatPPPPM7gAAAAAAAAAAAAAAAAAUjzzxQzzl6AAAAAAAAAAAAAAAAAOal+MxY+uJAAAAAAAAAAAAAAAAA4DX++zJV2v7AAAAAAAAAAAAAAAAil8x9chqPOAAAAAAAAAAAAAAAAAUAsgj8EKeNAAAAAAAAAAAAAAAAAUgvtLUICSbAAAAAAAAAAAAAAAAAAmeBXRSrdIAMMIAAAEAAAIIIgAAAEQ3dw6Eg8cw0UIMcYAAEYgc0QcAQ8Qg04M4Asg0ocwwIAAsgIcMk44IgMoU40YEo4gg040IIAAQgAAAAAAAAAAAQEQwgAAAAAAgAAAAAAIAAAAAAAAAIEAAAAAAAAAA4s0ooEUIggAYIcQcE0sgUA0so0MQQwgAAQgwAAAggAQgAQgAAQggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/8QAJREBAAIBAwQCAgMAAAAAAAAAAQARIRAxQUBRYfBxoSCRYICx/9oACAEDAQE/EP5qZ2mcwQDPflFZaIC144+ZwF79KaDLArZ9bfjUGybO0++kLnnb41uLfiDVVeoSpGReiqO9hSECtGCMn+Qabgy2dKvePYbva6IX7caYKrGqCcm8GoIFzw6IfDxA5u+uhNzLWB7ix73fUWpDGa7u2nlWBsN8Rse6gP1dENZJgg7o/AQ9ZeIecK0urFhzAxVAAUQUHjL0eTNvf1KWlXNvXA4XToEAsuBWCKIKN56NFSCY68kOt3BaIlNSleDMPq7e3TnbI0zcKYIRN7+4Eof6Of/EAB8RAQACAwEBAQADAAAAAAAAAAEAERAhMUBBIGBxgP/aAAgBAgEBPxD+bA5DfcflDXcAa8qgWxP6fkUbIo0+S1pl1UqWZtxAo8SoudlV3FqnCmzNLxd5xrv4B1xXvBvEF++EWoL6RcROxMG4moZXjyJXUH9gWxhmjAsqIKO41X4wOmWKgpyDILi9qw6qBRR40ufaETsMVYQAo8yDpik4qV/hz//EACwQAQACAQIFAwQDAQEBAQAAAAEAESExQRBRYXGBkaHBIFCx0eHw8TBAgGD/2gAIAQEAAT8Q/wDr0GQA1V0lRD3TVeQR+mTqC4CkAC5ag+3+cljvLZw3KRar7bnrEpQRJt9KseCOkXqoeCVDRZLUCXFQzWGrHpL6A3Th6aTBf6tphYIDK21yheoCupdCIxAN4bfal3tla/wmhs/5AVucdVpLxDo2DpAxWS6MvT7O2owea/qN6bl+O3DzPM8zzPM8zzPM8zzwI4Mg07moo9iHZ+y5+QLLxgcekEzMzMzMxaFUA1WdGCEXLly5cuObBqide8ECUNLx6fZX0aK93Y+fr75hN0ENiiRyLXX/AA/UvrdXoGc85szEw0v7I7NKXYiVNuKlYiJeqp4k8QNNRLxsWJwdNShIqOYuVKlSouNrRSMQJRR3B9kVZSA86+3BaobrV2JWj5+x3Zg1tcrzZiY4AyE8BuRQolJtNIybCg/MKvoG/pLly5cIFugbxt26/Y1Abs8H8wiKhB5XNZKKB19YCEGgfUaHcO6aIEGt534GlBoko2FdHk/fDMzMxM9LbVHM6qKV/YWPD/ayLmAUR5kvIMpzuz06xAAR3GVKlSo4FcBFIm0C17xVc8TagZEgYxpGzguXK5opYorpAoE2GkJFsmWl6/Yf6q2mR5k8xMOa7OBG1tOeL5NGJilvQaP6ZcuXLAap/iPHVVWvKPhdCUxCCByMt3tFrpy4jzI3ivsYEXUuzj9TpnRZZeZ9THLBbmfSBOjHldZ/pSu/Qs4Oi5fJ+i1pig8zEq62XzreMB1Z/JMTEtVt6D1z9jCO2B0ZkJcDU2fSeSjixOl6Zk8RnQxqa0OprqaE6KoGpXgFBXXWLf0Jabak2mM2p2CNoZcvIhlgFBwBcBa4CIMAuJu5fsmmHRYf4S4fasupmUQnJLlmzZRx9ZjIWvulX3tv2gdwrO3FyH53Y9fx9lYXerurynzEUFFI6jwRAI6jNWJ54T3g8w3C3LmbjxBIRQN4CCgUHEE5FAarDJGp9eXj7KQHGBL7x8xDxex7hBNK1G7bMTExMQWZ9BIPMT2+h8BWqadX2e1nbbSv1GmUGbCHb6evzPaPFdg95mYCtGV2jXX1lPz+kMH/AKwt5JYlqVjtE84sl1Cs94DYAdBtqXboe2ml3qf8qIlRrXU/EOUp0HtNGnXhrjnOuoSpUMChkm4bQGI78A8xMw+1jsJU1GpNheUmgha8fTvkBgprSoyiivFhauTFkLDIlO/PxD04Q8xgiiGoaW30h9KtW0F5vt9VklFruuCu0cY5TCtenLSN/SVpTVusuG0FGovocv8Ajgs5Svsij5b8vxGK/u/9XrnKKXuby6eViRc0HNRcYOBSXmOCTNAetRkplaALKXnDioM6VbXsQUINAKCORS115HlxHWt/m2g3fAH1DRlOL4Mnc/ohQ2tFicLWqprEOZSgytwBVjWpxB64g6g1Oh6e09s/Kf2xW+oCDWX9Osq/isv7jof6EWPqfScmbRrmoBlhZMHQ+YmH+oWqVTTKeVIDNJfHp8cG7v6pjNWgnJKvxlgwA2TBvY/mCGQEdSy/+tbmA9Un4qVrwTn0ejArUUtTcPZz2YBp3ET8FHDf7Gw+JcIG7v1PipVgdqeivmMU1wwNfbeU/G3iBEvjVHT9oNlmkMLRIog1eT5iNaoSkthIrbQRgFaIT0iw8/mhOtabVTESWvi34iJXa7U/EmaB1Se8vUKsTroYSBgOAbEd4DnrEZo/SRmDq/LB+YtP0TMbFCuqHGmYqElNatlNy5RgUxbHw1AiWoXDEp58vT+Uq54PoP3CrdSjvcFXQF8tfMKuU06AbL6R5SxZrp6HvBXHSwIXg8SzIK7FNR20+ixCEJbSVnbePvR4wFBEZi2AVlrVsFChq1Z7wpBqrIgc+VwvBIkwudDjRZl09BfAhOlv8OKH9xLKLylkC96t4Ngt0Wn9RvHhy4RL018xub8vi0vH3wxTzf8AQjeA5EpjqvAu0vNeLqUbsPdLkzwkrfrfpwzZdl70XFi5qHMRGgK1mb5Ll+2Z95i66hP5gXZte17ufRiIEDSO0b4ON7weEZ2D7iKvdHuZ+JhKvxFfEWHp9BSEvRMXfLrHvuy+INsblY+IVRFWsbdZ4H+RKJALRWv0hftHG1E+G4WIVjknANjSXQA+Yp2ofYV8/RXzp+6llllzwX4ndP2nBJoushIE1Iq1nkKz78KiL80V/i4f1lppBsdcypyLiUHIxKMzRrlRenBpoJOrk+56RQWBKvR5QChUVgi5l0VxuDTbCiqW5HJ/ccCFiCkZWnvsFzX+x8rBxwxW7WX1vgiIYElKsXCqiBoK6TP2ouVIw+/QpqHjLHdH7kv4JifjjQtuob+cKy1xcF60pgb6TONY+rHzMBanoX7hm4U9398S2CYLBUL95eEXL4EGUtz/AJIanbr5uWdMdvizpoVtPWUltL+H4mv5jyVGxKk8xh6kLBa3UrciKoqy5fSoloVxuj5dYcJmgKc47fp/tP8AP/af3z5hN0UEAO8BsqAKZ7S85YsG+M8MHdTWDC9deDoKjdtT88BLtCOiVNc9zwQE5VTTZ7i/MyjofRj44VExT6iINQGA3or2+YLRdWa8pfb6ViL3rIzAC3FWYaeWc9eF8GjPIz7XMUXWfRBvU8G7TOsxriKNR4e04XPZeT8Spy2lhE6W5CYRfdEye0UpDqHxE67kyPdW6rNDmYCaNvoy/dCeRH98RrLe8Kx71H/fftg2o95L1D3/AIR/5QhD70viKTgR0WlZXXghAJSNBNG9n8xAPbIcHStxa/yV9NdF6LvMN30P7n+D/cNz0n7nO9H+4bi9pKejo+J746vibK9y/MxOtt/rEswBqLaMeDiLw5GHFp1aJcY0U9wT8Moz/Ln54OJotq7Xw36xtEWukhVObFb+SK9o38hH7zfG8lwzq2Fic4oFx4MAfliV1jrwnha55tolsdUvcx1D7j9QGj+QHBBKSzrAWwnocUHUGYuIwUWeY4u+BBsJi9dpdvd0ZQGdc/8ATonJD3i1l39tp0T4I9v+4kgfSBE70w+SOdIYMnjgCAIlI7zKfrBb1bdtInDG59QxFVBeSo2DbsrH1atXZc14uooBlClPMZRSVMBvR9xVbW8Q0Adj/wDJ6f8Aku9OOnDABPrMnaC0Pn/waQvtXuNuJXxGVdIUUIQZGra4G5HY2heLFBet/WA2CFojw28xWFyisATTWrxwMOcDhCJV85fe3ADofPBp6AtppfiOrSmMLY6cE7G1BAvENNQusEj02l4XKpspTbtwCxZVKyXzgmFQ904BEnJwTXnBKANPXJPBuSKXZqYs8jSuXTglSijeWJVohFAQKywbB58KeeVPo0HWsdJrxtOrOS/HeuBfFkdg1lhbVQAlCgcUDrwpK1oVkHq7wzG7jXM4Vz+K7RaAlZ1D489OC0W6Q8S6L7OcpmEFQOFqlMAAZMwwIAC9M8P7Lkz+t5cFAQYbi79LGOyBSWFbLzBc1paWlmPPDNjQy+Lp/wBzGFQsCtZn04BopWRtlKoyBERjX14ETZMsLDHLW4gsZlX6h1+ODyhQGrlCjIdlqqles9p+f6NFoUL6RipQPSva/wAzRFde7GvD3EEEFqLvwjZdGJyzAOSg/JBEEbHJMSpzrrXWrlkWVzIaeYqsSjOoUxSi3nQZ24Mug1joz7SgX2ws8qSr8QhboBQ0pYcmuH9bpNCgyNbvAqhGbtSls6xVQhX0uTOOUy7f8ReUq3mqotjChHz6VVQ/1sRVnBkmHWTyB963gxKFrO9fO9b4E4WFI7kXNNg0Xz4IBAI4R3jJtNuy+2kIG1AoDocE7Sumz3rWELZvAt4H0uhkfEsa0UFOXBch5yCL3a0LD0viwdS1BBexiHImh0HjgMALCmRy4pskKae6tYmRG2hb14aJkJntjOks2Xrj04qiK1zXmwAAMBpwQqralLeoYm114h21CMqCgg1CpCxJaOVeBD00gQ2oFAdDgbA6Zgxh9CCkYAyOXtwP5dWwzBbNlih4cQAKMBwsi2rKXvWsJ9NDoOGmICZ75ozIdarz/wDb/wD/2Q==" alt="الطازج سناك"><div><b>الطازج سناك</b><small>RESTAURANT & SNACK</small></div></div>
+  <div class="footer-links"><a href="#menu">المنيو</a><a href="#offers">العروض</a><a href="#branches">الفروع</a><a href="#about">عنّا</a></div>
+  <small>© 2026 ALTAZAJ SNACK</small>
 </footer>
 
-<div class="mobile-nav" id="mobileNav">
-  <a href="#home" onclick="toggleNav()">الرئيسية</a>
-  <a href="#menu" onclick="toggleNav()">المنيو</a>
-  <a href="#offers" onclick="toggleNav()">العروض</a>
-  <a href="#branches" onclick="toggleNav()">الفروع</a>
-  <a href="#about" onclick="toggleNav()">عنّا</a>
-</div>
+<div id="mobileNav" class="mobile-nav"><a href="#home" onclick="toggleNav()">الرئيسية</a><a href="#menu" onclick="toggleNav()">المنيو</a><a href="#offers" onclick="toggleNav()">العروض</a><a href="#branches" onclick="toggleNav()">الفروع</a><a href="#about" onclick="toggleNav()">عنّا</a></div>
 
-<div class="cart-panel" id="cartPanel" aria-hidden="true">
-  <div class="backdrop" onclick="closeCart()"></div>
-  <aside class="cart">
-    <button class="close" type="button" onclick="closeCart()" aria-label="إغلاق">×</button>
-    <span class="kicker">YOUR ORDER</span>
-    <h2>سلة طلبك</h2>
-    <div id="cartItems"></div>
-    <div class="total"><span>المجموع</span><b id="cartTotal">0 د.ع</b></div>
-    <div class="selected-branch" id="selectedBranch">الفرع: غير محدد</div>
-    <button class="btn primary full" type="button" onclick="openOrderForm()">إكمال الطلب</button>
-    <small class="cart-hint">سيتم تجهيز رسالة واتساب مرتبة بالطلب والفرع والبيانات وإرسالها لرقم المطعم المنشور.</small>
-  </aside>
-</div>
+<div id="cartPanel" class="overlay"><div class="overlay-bg" onclick="closeCart()"></div><aside class="drawer"><button class="close-btn" onclick="closeCart()">×</button><span>YOUR ORDER</span><h2>سلتك</h2><div id="cartItems"></div><div class="cart-total"><small>المجموع</small><strong id="cartTotal">0 د.ع</strong></div><div id="selectedBranch" class="selected-branch">الفرع: الجزائر</div><button class="wide-btn" onclick="openOrderForm()">إكمال الطلب</button><button class="wide-ghost" onclick="copyOrder()">نسخ تفاصيل الطلب</button><button class="call-btn" onclick="callBranch()">اتصال بالفرع</button></aside></div>
 
-<div class="order-modal" id="orderModal" aria-hidden="true">
-  <div class="order-backdrop" onclick="closeOrderForm()"></div>
-  <div class="order-card">
-    <button class="close" type="button" onclick="closeOrderForm()" aria-label="إغلاق">×</button>
-    <span class="kicker">CHECKOUT</span>
-    <h2>بيانات الطلب</h2>
-    <p class="order-intro">اكتب بياناتك، وبعدها راح نفتح واتساب برسالة طلب جاهزة.</p>
-    <label>الاسم<input id="customerName" autocomplete="name" placeholder="اسمك الكامل"></label>
-    <label>رقم الهاتف<input id="customerPhone" autocomplete="tel" inputmode="tel" placeholder="07xxxxxxxxx"></label>
-    <label>الفرع<select id="branchSelect" onchange="syncBranch(this.value)"><option value="">اختر الفرع</option><option>الجزائر</option><option>بصرة تايمز سكوير</option><option>الجبيلة</option><option>الزبير</option></select></label>
-    <label>العنوان<input id="customerAddress" autocomplete="street-address" placeholder="المنطقة، الشارع، أقرب نقطة دالة"></label>
-    <label>ملاحظات الطلب<textarea id="customerNotes" rows="3" placeholder="إضافات أو ملاحظات..."></textarea></label>
-    <button class="btn primary full" type="button" onclick="sendWhatsAppOrder()">إرسال الطلب عبر واتساب ↗</button>
-    <div class="secure-note">لن يتم تخزين بياناتك داخل الموقع.</div>
-  </div>
-</div>
+<div id="orderModal" class="modal"><div class="overlay-bg" onclick="closeOrderForm()"></div><div class="order-card"><button class="close-btn" onclick="closeOrderForm()">×</button><span>CHECKOUT</span><h2>بيانات الطلب</h2><label>الاسم<input id="customerName" autocomplete="name" placeholder="اسمك الكامل"></label><label>رقم الهاتف<input id="customerPhone" inputmode="tel" autocomplete="tel" placeholder="07xxxxxxxxx"></label><label>الفرع<select id="branchSelect"><option>الجزائر</option><option>بصرة تايمز سكوير</option><option>الجبيلة</option><option>الزبير</option></select></label><label>العنوان<textarea id="customerAddress" rows="3" placeholder="المنطقة، الشارع، أقرب نقطة دالة"></textarea></label><button class="wide-btn" onclick="sendOrder()">تجهيز الطلب ↗</button><small class="order-note">لا يتم تخزين بيانات الزبائن داخل الموقع. يتم تجهيز النص ونسخه ثم الاتصال بالفرع المحدد.</small></div></div>
 
+<div id="toast" class="toast"></div>
 <script src="script.js"></script>
 </body>
 </html>
