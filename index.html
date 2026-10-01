@@ -2,74 +2,247 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>الطازج سناك | المطعم العراقي</title>
-<meta name="description" content="الطازج سناك — منيو، عروض وفروع الطازج سناك في البصرة.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#e51f2b">
+<meta name="description" content="الطازج سناك — المنيو، العروض، الفروع والطلب في البصرة.">
+<meta property="og:title" content="الطازج سناك | البصرة">
+<meta property="og:description" content="المنيو والعروض والفروع والطلب من الطازج سناك.">
+<meta property="og:type" content="website">
+<title>الطازج سناك | البصرة</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"الطازج سناك","servesCuisine":["Fast Food","Pizza","Sandwiches"],"telephone":"+9647711111828","address":{"@type":"PostalAddress","addressLocality":"Basrah","addressCountry":"IQ"},"url":"https://almdrydym090-gif.github.io/altazaj-snack/"}
+</script>
 </head>
 <body>
-<div class="topbar"><span>أهلاً وسهلاً بكم في الطازج سناك</span><a href="#branches">تعرّف على فروعنا ←</a></div>
+<div class="topbar">
+  <span>الطازج سناك • طعم يعرفه أهل البصرة</span>
+  <a href="#branches">شوف فروعنا ↗</a>
+</div>
+
 <header class="header">
-<a class="brand" href="#home" aria-label="الطازج سناك"><span class="logo-crop" aria-hidden="true"></span><span class="brand-text"><b>الطازج سناك</b><small>restaurant & snack</small></span></a>
-<nav><a class="active" href="#home">الرئيسية</a><a href="#menu">المنيو</a><a href="#offers">العروض</a><a href="#branches">الفروع</a><a href="#about">عن الطازج</a></nav>
-<div class="header-actions"><a class="phone" href="tel:+9647711111828">0771 111 1828</a><button class="cart-btn" onclick="openCart()">السلة <span id="cartCount">0</span></button><button class="menu-toggle" onclick="toggleNav()">☰</button></div>
+  <a class="brand" href="#home" aria-label="الطازج سناك">
+    <img class="brand-logo" src="https://imagedelivery.net/WTyNS1A4BnBF4BmXiRPGJA/105b679b-d236-4b80-9c01-7aa6aa305d00/xxl" alt="شعار الطازج سناك">
+    <span class="brand-text"><b>الطازج سناك</b><small>restaurant & snack</small></span>
+  </a>
+  <nav>
+    <a class="active" href="#home">الرئيسية</a>
+    <a href="#menu">المنيو</a>
+    <a href="#offers">العروض</a>
+    <a href="#branches">الفروع</a>
+    <a href="#about">عن الطازج</a>
+  </nav>
+  <div class="header-actions">
+    <a class="phone" href="tel:+9647711111828">0771 111 1828</a>
+    <button class="cart-btn" type="button" onclick="openCart()">السلة <span id="cartCount">0</span></button>
+    <button class="menu-toggle" type="button" onclick="toggleNav()" aria-label="فتح القائمة">☰</button>
+  </div>
 </header>
 
 <main>
 <section id="home" class="hero">
-<div class="hero-bg"></div>
-<div class="hero-copy">
-<span class="eyebrow">ALTAZAJ SNACK • BASRAH</span>
-<h1>طعم يعرفه<br><em>أهل البصرة.</em></h1>
-<p>من البرجر والكرسبي إلى الصاج والبيتزا — وجبات الطازج اللي تحبها، بطعمها الأصلي.</p>
-<div class="hero-actions"><a class="btn primary" href="#menu">تصفح المنيو <span>←</span></a><a class="btn glass" href="#offers">شوف العروض</a></div>
-<div class="hero-note"><span class="dot"></span><span>مستمرين بخدمتكم من 2008</span></div>
-</div>
-<div class="hero-visual">
-<div class="hero-image"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg" alt="الطازج سناك" fetchpriority="high"></div>
-<div class="hero-badge"><b>الطازج</b><small>سناك</small><span>نكهة • جودة • مزاج</span></div>
-</div>
+  <div class="hero-bg"></div>
+  <div class="hero-copy">
+    <span class="eyebrow">ALTAZAJ SNACK • BASRAH</span>
+    <h1>طعم يعرفه<br><em>أهل البصرة.</em></h1>
+    <p>من البرجر والكرسبي إلى الصاج والبيتزا — اختار وجبتك، حدد فرعك، وخلي الطلب يوصل للمطعم مباشرة.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#menu">تصفح المنيو <span>←</span></a>
+      <a class="btn glass" href="#branches">الفروع</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>2008</b><span>بداية الفرع الرئيسي</span></div>
+      <div><b>4</b><span>فروع ضمن هذه النسخة</span></div>
+      <div><b>+50</b><span>صنف في المنيو</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-image">
+      <img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg" alt="الطازج سناك" fetchpriority="high">
+    </div>
+    <div class="hero-badge">
+      <span>عرض الموسم</span>
+      <b>فاهيتا × 2</b>
+      <small>الثاني بـ 1000 د.ع</small>
+    </div>
+  </div>
 </section>
 
 <section id="offers" class="section offers-section">
-<div class="section-head"><div><span class="kicker">HOT DEALS</span><h2>عروض تفتح النفس</h2></div><p>كل فترة عدنا سبب جديد يخليك تطلب.</p></div>
-<div class="offers-grid">
-<article class="offer-main"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/fajita-offer.jpg" alt="عرض فاهيتا من الطازج"><div class="offer-overlay"></div><div class="offer-copy"><span>MAGIC OFFER</span><h3>فاهيتا<br>مرتين أحلى.</h3><p>اشتري ساندويج فاهيتا واحصل على الثاني بـ 1000 د.ع.</p><a class="offer-btn" href="#menu">اطلب من المنيو</a></div></article>
-<article class="offer-side"><div class="side-pattern"></div><span>مزاجك يختار</span><h3>من أول<br>لقمة.</h3><p>برجر، كرسبي، صاج، بيتزا وأكثر.</p><a href="#menu">استكشف الأصناف ←</a></article>
-</div>
+  <div class="section-head">
+    <div><span class="kicker">HOT DEALS</span><h2>عروض تفتح النفس</h2></div>
+    <p>نحافظ على هوية المطعم، ونخلي العروض واضحة من أول ثانية.</p>
+  </div>
+  <div class="offers-grid">
+    <article class="offer-main">
+      <img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/fajita-offer.jpg" alt="عرض الفاهيتا من الطازج" loading="lazy">
+      <div class="offer-overlay"></div>
+      <div class="offer-copy">
+        <span>OFFICIAL OFFER</span>
+        <h3>فاهيتا<br>مرتين أحلى.</h3>
+        <p>أشتري ساندويج فاهيتا واحصل على الساندويج الثاني بـ 1000 د.ع.</p>
+        <button class="offer-btn" type="button" onclick="focusCategory('ساب الساندويش')">وصلني للمنيو</button>
+      </div>
+    </article>
+    <article class="offer-side">
+      <div class="side-pattern"></div>
+      <span>مزاجك يختار</span>
+      <h3>من أول<br>لقمة.</h3>
+      <p>برجر، كرسبي، صاج، بيتزا، أطباق غربية وأكثر.</p>
+      <a href="#menu">استكشف كل الأصناف ←</a>
+    </article>
+  </div>
 </section>
 
 <section id="menu" class="section menu-section">
-<div class="section-head menu-head"><div><span class="kicker">OUR MENU</span><h2>اختار اللي تشتهيه</h2></div><div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن وجبة..." oninput="renderMenu()"></div></div>
-<div id="chips" class="chips"></div>
-<div id="menuGrid" class="menu-grid"></div>
+  <div class="section-head menu-head">
+    <div><span class="kicker">THE MENU</span><h2>منيو الطازج</h2></div>
+    <div class="search">
+      <span>⌕</span>
+      <input id="search" aria-label="البحث في المنيو" placeholder="ابحث عن وجبة..." oninput="renderMenu()">
+    </div>
+  </div>
+  <div class="menu-note"><span>ملاحظة</span><p>الأصناف التي يظهر سعرها «حسب الاختيار» تحتاج تحديد الحجم/الخيار عند الطلب، لذلك لا نضع لها سعراً من عندنا.</p></div>
+  <div id="chips" class="chips"></div>
+  <div id="menuGrid" class="menu-grid"></div>
 </section>
 
 <section id="about" class="about-section">
-<div class="about-image"><img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A8%D9%8A%D9%83%D8%B1%D9%8A-%D9%88-%D9%85%D8%B7%D8%B9%D9%85-scaled.jpg" alt="الطازج سناك في البصرة" loading="lazy"></div>
-<div class="about-copy"><span class="kicker">OUR STORY</span><h2>من البصرة.<br><em>ولأهل البصرة.</em></h2><p>بدأت حكاية فرع الطازج سناك الرئيسي في الجزائر سنة 2008، وتوسعت التجربة مع الوقت لتخدم أهل البصرة بعدة فروع.</p><div class="about-points"><div><b>2008</b><span>بداية الفرع الرئيسي</span></div><div><b>4+</b><span>فروع وخيارات قريبة منك</span></div><div><b>100%</b><span>مزاج طازج</span></div></div></div>
+  <div class="about-image">
+    <img src="https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A8%D9%8A%D9%83%D8%B1%D9%8A-%D9%88-%D9%85%D8%B7%D8%B9%D9%85-scaled.jpg" alt="الطازج سناك" loading="lazy">
+  </div>
+  <div class="about-copy">
+    <span class="kicker">OUR STORY</span>
+    <h2>من البصرة.<br><em>ولأهل البصرة.</em></h2>
+    <p>بحسب صفحة أعمال شركة الطازج العراقية، افتتح الفرع الرئيسي في الجزائر مقابل مستشفى ابن غزوان سنة 2008، ثم توسعت التجربة بفروع أخرى في البصرة.</p>
+    <div class="about-points">
+      <div><b>2008</b><span>افتتاح الفرع الرئيسي</span></div>
+      <div><b>2015</b><span>افتتاح فرع تايمز سكوير</span></div>
+      <div><b>2016</b><span>افتتاح فرع الجبيلة</span></div>
+    </div>
+  </div>
 </section>
 
 <section id="branches" class="section branches-section">
-<div class="section-head"><div><span class="kicker">FIND US</span><h2>فروع الطازج</h2></div><p>اختار الفرع الأقرب إلك وروح للاتجاهات.</p></div>
-<div class="branch-grid">
-<article class="branch featured"><div class="branch-number">01</div><div class="branch-content"><span>الفرع الرئيسي</span><h3>الجزائر</h3><p>مقابل مستشفى ابن غزوان للولادة</p><div class="branch-meta"><small>📞 0771 111 1828</small><small>10:00 ص — 12:30 ليلًا</small></div></div><a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Basrah" target="_blank" rel="noopener">الاتجاهات ↗</a></article>
-<article class="branch"><div class="branch-number">02</div><div class="branch-content"><span>الفرع الثاني</span><h3>بصرة تايمز سكوير</h3><p>داخل مول بصرة تايمز سكوير</p><div class="branch-meta"><small>الطابق الثالث</small></div></div><a class="direction" href="https://www.google.com/maps/search/?api=1&query=Basra+Times+Square+Mall" target="_blank" rel="noopener">الاتجاهات ↗</a></article>
-<article class="branch"><div class="branch-number">03</div><div class="branch-content"><span>الفرع الثالث</span><h3>الجبيلة</h3><p>مقابل شارع شهادة الجنسية</p><div class="branch-meta"><small>📞 0772 929 2929</small></div></div><a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Jubaila+Basrah" target="_blank" rel="noopener">الاتجاهات ↗</a></article>
-<article class="branch"><div class="branch-number">04</div><div class="branch-content"><span>فرع الزبير</span><h3>الزبير</h3><p>فرع الطازج سناك — الزبير</p><div class="branch-meta"><small>اختار الزبير من المنيو للطلب</small></div></div><a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Al+Zubair+Basrah" target="_blank" rel="noopener">الاتجاهات ↗</a></article>
-</div>
+  <div class="section-head">
+    <div><span class="kicker">OUR BRANCHES</span><h2>فروع الطازج</h2></div>
+    <p>حدد الفرع الأقرب إلك، شوف الموقع، وبعدها كمل طلبك من السلة.</p>
+  </div>
+  <div class="branch-grid">
+    <article class="branch featured">
+      <div class="branch-number">01</div>
+      <div class="branch-content">
+        <span>الفرع الرئيسي</span>
+        <h3>الجزائر</h3>
+        <p>مقابل مستشفى ابن غزوان للولادة</p>
+        <div class="branch-meta"><small>📞 0771 111 1828</small><small>10:00 ص — 12:30 ليلًا</small></div>
+      </div>
+      <div class="branch-actions">
+        <button class="branch-order" type="button" onclick="selectBranch('الجزائر')">اختيار الفرع</button>
+        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Basrah" target="_blank" rel="noopener">الخريطة ↗</a>
+      </div>
+    </article>
+    <article class="branch">
+      <div class="branch-number">02</div>
+      <div class="branch-content">
+        <span>الفرع الثاني</span>
+        <h3>بصرة تايمز سكوير</h3>
+        <p>داخل مول بصرة تايمز سكوير</p>
+        <div class="branch-meta"><small>فرع المول</small></div>
+      </div>
+      <div class="branch-actions">
+        <button class="branch-order" type="button" onclick="selectBranch('بصرة تايمز سكوير')">اختيار الفرع</button>
+        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=Basra+Times+Square+Mall" target="_blank" rel="noopener">الخريطة ↗</a>
+      </div>
+    </article>
+    <article class="branch">
+      <div class="branch-number">03</div>
+      <div class="branch-content">
+        <span>الفرع الثالث</span>
+        <h3>الجبيلة</h3>
+        <p>مقابل شارع شهادة الجنسية</p>
+        <div class="branch-meta"><small>📞 0772 929 2929</small><small>10:00 ص — 12:30 ليلًا</small></div>
+      </div>
+      <div class="branch-actions">
+        <button class="branch-order" type="button" onclick="selectBranch('الجبيلة')">اختيار الفرع</button>
+        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Jubaila+Basrah" target="_blank" rel="noopener">الخريطة ↗</a>
+      </div>
+    </article>
+    <article class="branch">
+      <div class="branch-number">04</div>
+      <div class="branch-content">
+        <span>فرع الزبير</span>
+        <h3>الزبير</h3>
+        <p>شارع الجاهزة — مقابل دائرة الكهرباء</p>
+        <div class="branch-meta"><small>الزبير</small></div>
+      </div>
+      <div class="branch-actions">
+        <button class="branch-order" type="button" onclick="selectBranch('الزبير')">اختيار الفرع</button>
+        <a class="direction" href="https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Al+Zubair+Basrah" target="_blank" rel="noopener">الخريطة ↗</a>
+      </div>
+    </article>
+  </div>
 </section>
 
-<section class="cta"><div><span>جاهز للطلب؟</span><h2>خلّي الجوع<br><em>على الطازج.</em></h2></div><a class="btn white" href="#menu">ابدأ اختيارك ←</a></section>
+<section class="cta">
+  <div><span>جاهز للطلب؟</span><h2>خلّي الجوع<br><em>على الطازج.</em></h2></div>
+  <button class="btn white" type="button" onclick="openCart()">افتح السلة ←</button>
+</section>
 </main>
 
-<footer class="footer"><div class="footer-brand"><span class="logo-crop"></span><div><b>الطازج سناك</b><small>restaurant & snack</small></div></div><div class="footer-links"><a href="#menu">المنيو</a><a href="#offers">العروض</a><a href="#branches">الفروع</a><a href="tel:+9647711111828">اتصل بنا</a></div><div class="footer-copy">© 2026 الطازج سناك</div></footer>
+<footer class="footer">
+  <div class="footer-brand">
+    <img class="footer-logo" src="https://imagedelivery.net/WTyNS1A4BnBF4BmXiRPGJA/105b679b-d236-4b80-9c01-7aa6aa305d00/xxl" alt="شعار الطازج سناك">
+    <div><b>الطازج سناك</b><small>restaurant & snack</small></div>
+  </div>
+  <div class="footer-links">
+    <a href="#menu">المنيو</a><a href="#offers">العروض</a><a href="#branches">الفروع</a><a href="https://wa.me/9647711111828" target="_blank" rel="noopener">واتساب</a><a href="tel:+9647711111828">اتصل بنا</a>
+  </div>
+  <div class="footer-copy">© 2026 الطازج سناك</div>
+</footer>
 
-<div class="mobile-nav" id="mobileNav"><a href="#home" onclick="toggleNav()">الرئيسية</a><a href="#menu" onclick="toggleNav()">المنيو</a><a href="#offers" onclick="toggleNav()">العروض</a><a href="#branches" onclick="toggleNav()">الفروع</a><a href="#about" onclick="toggleNav()">عن الطازج</a></div>
-<div class="cart-panel" id="cartPanel"><div class="backdrop" onclick="closeCart()"></div><aside class="cart"><button class="close" onclick="closeCart()">×</button><span class="kicker">YOUR ORDER</span><h2>سلة طلبك</h2><div id="cartItems"></div><div class="total"><span>المجموع</span><b id="cartTotal">0 د.ع</b></div><button class="btn primary full" onclick="checkout()">متابعة الطلب</button><small class="cart-hint">الطلب الإلكتروني يحتاج ربط نظام الطلب/التوصيل الخاص بالمطعم.</small></aside></div>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="toggleNav()">الرئيسية</a>
+  <a href="#menu" onclick="toggleNav()">المنيو</a>
+  <a href="#offers" onclick="toggleNav()">العروض</a>
+  <a href="#branches" onclick="toggleNav()">الفروع</a>
+  <a href="#about" onclick="toggleNav()">عنّا</a>
+</div>
+
+<div class="cart-panel" id="cartPanel" aria-hidden="true">
+  <div class="backdrop" onclick="closeCart()"></div>
+  <aside class="cart">
+    <button class="close" type="button" onclick="closeCart()" aria-label="إغلاق">×</button>
+    <span class="kicker">YOUR ORDER</span>
+    <h2>سلة طلبك</h2>
+    <div id="cartItems"></div>
+    <div class="total"><span>المجموع</span><b id="cartTotal">0 د.ع</b></div>
+    <div class="selected-branch" id="selectedBranch">الفرع: غير محدد</div>
+    <button class="btn primary full" type="button" onclick="openOrderForm()">إكمال الطلب</button>
+    <small class="cart-hint">سيتم تجهيز رسالة واتساب مرتبة بالطلب والفرع والبيانات وإرسالها لرقم المطعم المنشور.</small>
+  </aside>
+</div>
+
+<div class="order-modal" id="orderModal" aria-hidden="true">
+  <div class="order-backdrop" onclick="closeOrderForm()"></div>
+  <div class="order-card">
+    <button class="close" type="button" onclick="closeOrderForm()" aria-label="إغلاق">×</button>
+    <span class="kicker">CHECKOUT</span>
+    <h2>بيانات الطلب</h2>
+    <p class="order-intro">اكتب بياناتك، وبعدها راح نفتح واتساب برسالة طلب جاهزة.</p>
+    <label>الاسم<input id="customerName" autocomplete="name" placeholder="اسمك الكامل"></label>
+    <label>رقم الهاتف<input id="customerPhone" autocomplete="tel" inputmode="tel" placeholder="07xxxxxxxxx"></label>
+    <label>الفرع<select id="branchSelect" onchange="syncBranch(this.value)"><option value="">اختر الفرع</option><option>الجزائر</option><option>بصرة تايمز سكوير</option><option>الجبيلة</option><option>الزبير</option></select></label>
+    <label>العنوان<input id="customerAddress" autocomplete="street-address" placeholder="المنطقة، الشارع، أقرب نقطة دالة"></label>
+    <label>ملاحظات الطلب<textarea id="customerNotes" rows="3" placeholder="إضافات أو ملاحظات..."></textarea></label>
+    <button class="btn primary full" type="button" onclick="sendWhatsAppOrder()">إرسال الطلب عبر واتساب ↗</button>
+    <div class="secure-note">لن يتم تخزين بياناتك داخل الموقع.</div>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
