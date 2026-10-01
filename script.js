@@ -154,13 +154,33 @@ const OFFICIAL_IMAGES={
   times:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D9%85%D9%88%D9%84.jpg",
   jubaila:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D8%AC%D8%A8%D9%8A%D9%84%D8%A9.jpg"
 };
+const MENU_PHOTOS=[
+  OFFICIAL_IMAGES.offer,
+  OFFICIAL_IMAGES.times,
+  OFFICIAL_IMAGES.jubaila,
+  OFFICIAL_IMAGES.about,
+  OFFICIAL_IMAGES.default
+];
 const CATEGORY_IMAGES={
-  "ساب الساندويش":OFFICIAL_IMAGES.offer,"الصاج":OFFICIAL_IMAGES.offer,"ميغا ساندويش":OFFICIAL_IMAGES.offer,
-  "البرجر":OFFICIAL_IMAGES.times,"البيتزا":OFFICIAL_IMAGES.times,"المشاوي":OFFICIAL_IMAGES.about,
-  "الأطباق الشرقية":OFFICIAL_IMAGES.about,"الإيطالي":OFFICIAL_IMAGES.about,"الوجبة الأطفال":OFFICIAL_IMAGES.times,
-  "البطاطا المقلية":OFFICIAL_IMAGES.about,"السلطات":OFFICIAL_IMAGES.about,"الشوربة":OFFICIAL_IMAGES.about
+  "ساب الساندويش":OFFICIAL_IMAGES.offer,
+  "الصاج":OFFICIAL_IMAGES.offer,
+  "ميغا ساندويش":OFFICIAL_IMAGES.offer,
+  "البرجر":OFFICIAL_IMAGES.times,
+  "البيتزا":OFFICIAL_IMAGES.times,
+  "المشاوي":OFFICIAL_IMAGES.about,
+  "الأطباق الشرقية":OFFICIAL_IMAGES.about,
+  "الإيطالي":OFFICIAL_IMAGES.about,
+  "الوجبة الأطفال":OFFICIAL_IMAGES.times,
+  "البطاطا المقلية":OFFICIAL_IMAGES.about,
+  "السلطات":OFFICIAL_IMAGES.about,
+  "الشوربة":OFFICIAL_IMAGES.about,
+  "الكرسبي":OFFICIAL_IMAGES.about,
+  "الكنتاكي":OFFICIAL_IMAGES.default,
+  "المناقيش":OFFICIAL_IMAGES.about,
+  "الصوص":OFFICIAL_IMAGES.default,
+  "مشروبات باردة":OFFICIAL_IMAGES.times
 };
-const branchPhones={
+const branchPhones{
  "الجزائر":"07711111828","بصرة تايمز سكوير":"07729292929","الجبيلة":"07729292929","الزبير":"07719523849"
 };
 const branchMaps={
@@ -173,7 +193,11 @@ let cat="الكل",cart=[],selectedBranch="الجزائر";
 const cats=["الكل",...new Set(products.map(p=>p.cat))];
 
 function money(n){return Number(n).toLocaleString("ar-IQ")+" د.ع";}
-function imageFor(p){return CATEGORY_IMAGES[p.cat]||OFFICIAL_IMAGES.default;}
+function imageFor(p){
+  // Use the official restaurant photography as a clean fallback until each menu
+  // item's approved crop is committed as an individual asset.
+  return MENU_PHOTOS[(Number(p.id)-1)%MENU_PHOTOS.length] || CATEGORY_IMAGES[p.cat] || OFFICIAL_IMAGES.default;
+}
 function chips(){
   const el=document.getElementById("chips"); if(!el)return;
   el.innerHTML=cats.map(c=>'<button class="chip '+(c===cat?'active':'')+'" type="button" onclick="setCat('+JSON.stringify(c)+')">'+c+'</button>').join("");
