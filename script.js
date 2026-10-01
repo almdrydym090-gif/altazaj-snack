@@ -1,9 +1,3 @@
-const OFFICIAL_IMAGES={
-  default:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg",
-  offer:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/fajita-offer.jpg",
-  about:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A8%D9%8A%D9%83%D8%B1%D9%8A-%D9%88-%D9%85%D8%B7%D8%B9%D9%85-scaled.jpg",
-  branch:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D8%AC%D8%A8%D9%8A%D9%84%D8%A9-1024x683.jpg"
-};
 const products=[
 {id:1,name:"حمص بالطحينة",cat:"السلطات",price:null,desc:"حمص، شاورما لحم وصلصة طحينة."},
 {id:2,name:"باذنجانية",cat:"السلطات",price:null,desc:"باذنجان مقلي، طماطم، خيار، فلفل، بصل وصلصة."},
@@ -132,135 +126,140 @@ const products=[
 {id:109,name:"منقوشة زعتر",cat:"المناقيش",price:2500,desc:"زعتر وسمسم."},
 {id:110,name:"منقوشة جبنة",cat:"المناقيش",price:2750,desc:"خليط جبن."},
 {id:111,name:"منقوشة لحم مفروم",cat:"المناقيش",price:3000,desc:"منقوشة لحم مفروم."}
-];
-
-const categoryImage=(cat)=>{
-  if(cat==="البيتزا"||cat==="الإيطالي"||cat==="المناقيش") return OFFICIAL_IMAGES.about;
-  if(cat==="ساب الساندويش"||cat==="الصاج"||cat==="ميغا ساندويش") return OFFICIAL_IMAGES.offer;
-  if(cat==="السلطات") return OFFICIAL_IMAGES.about;
-  return OFFICIAL_IMAGES.default;
+,
+{id:112,name:"نفر كباب لحم عراقي",cat:"المشاوي",price:12500,desc:"شيش كباب من لحم غنم عراقي طازج، مشوي على فحم."},
+{id:113,name:"نصف نفر كباب لحم",cat:"المشاوي",price:9000,desc:"نصف حصة من كباب لحم غنم مشوي على فحم."},
+{id:114,name:"نفر كباب دجاج",cat:"المشاوي",price:8500,desc:"كباب من صدر دجاج مفروم، متبل بخلطة خاصة ومشوي على فحم."},
+{id:115,name:"نصف نفر كباب دجاج",cat:"المشاوي",price:6500,desc:"نصف حصة من كباب دجاج مشوي على فحم."},
+{id:116,name:"نفر تكة لحم عراقي",cat:"المشاوي",price:14500,desc:"قطع لحم غنم طرية متبلة بخلطة عراقية تقليدية ومشوية بعناية."},
+{id:117,name:"نصف نفر تكة لحم",cat:"المشاوي",price:9500,desc:"نصف حصة من تكة لحم غنم مشوي."},
+{id:118,name:"مشكل مشاوي",cat:"المشاوي",price:12500,desc:"شيش كباب لحم، شيش كباب دجاج وشيش تكة مشوية على فحم."},
+{id:119,name:"نفر معلاق",cat:"المشاوي",price:12500,desc:"قطع معلاق غنم طازج متبل ومشوي على فحم."},
+{id:120,name:"نفر طاووق",cat:"المشاوي",price:8500,desc:"قطع شيش طاووق من صدر دجاج متبل بالثوم والليمون ومشوي."},
+{id:121,name:"نصف نفر طاووق",cat:"المشاوي",price:6500,desc:"نصف حصة من شيش طاووق مشوي."},
+{id:122,name:"عرايس",cat:"المشاوي",price:6000,desc:"خبز عربي محشو بلحم مفروم متبل ومشوي على فحم."},
+{id:123,name:"مشكل مشاوي عائلي",cat:"المشاوي",price:36500,desc:"صينية عائلية مشكلة من كباب وتكة وطاووق للمشاركة."},
+{id:124,name:"دجاج مقلي مع الرز",cat:"الأطباق الشرقية",price:10000,desc:"قطع دجاج مقلية مقرمشة تقدم مع رز ومرق مشكل."},
+{id:125,name:"كبسة دجاج",cat:"الأطباق الشرقية",price:11000,desc:"أرز كبسة طويل متبل ببهارات خليجية مع دجاج مطهو بعناية."},
+{id:126,name:"مقلوبة دجاج",cat:"الأطباق الشرقية",price:11000,desc:"طبق مقلوبة تقليدي بالدجاج والباذنجان والبطاطا والرز المتبل."},
+{id:127,name:"قوزي عراقي",cat:"الأطباق الشرقية",price:14750,desc:"لحم غنم قوزي طري فوق رز مزين بالشعرية والمكسرات مع مرق."},
+{id:128,name:"خروف مشوي",cat:"الأطباق الشرقية",price:15000,desc:"قطع لحم خروف مشوية بالفرن وتقدم مع رز عراقي."},
+{id:129,name:"دجاج كاري مع الرز",cat:"الأطباق الشرقية",price:8000,desc:"قطع من صدر دجاج مطبوخة بصلصة كاري غنية وتقدم بجانب رز."},
+{id:130,name:"حساء عدس",cat:"الشوربة",price:2000,desc:"شوربة عدس دافئة تقدم مع ليمون وقطع خبز محمص."}
+]
+const OFFICIAL_IMAGES={
+  default:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D9%85%D8%B7%D8%B9%D9%85-2-scaled.jpg",
+  offer:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/fajita-offer.jpg",
+  about:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A8%D9%8A%D9%83%D8%B1%D9%8A-%D9%88-%D9%85%D8%B7%D8%B9%D9%85-scaled.jpg",
+  times:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D9%85%D9%88%D9%84.jpg",
+  jubaila:"https://www.altazaj-iq.com/wp-content/uploads/2021/01/%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D8%AC%D8%A8%D9%8A%D9%84%D8%A9.jpg"
 };
-let cat="الكل";
-let cart=[];
-let selectedBranch="";
-
+const CATEGORY_IMAGES={
+  "ساب الساندويش":OFFICIAL_IMAGES.offer,"الصاج":OFFICIAL_IMAGES.offer,"ميغا ساندويش":OFFICIAL_IMAGES.offer,
+  "البرجر":OFFICIAL_IMAGES.times,"البيتزا":OFFICIAL_IMAGES.times,"المشاوي":OFFICIAL_IMAGES.about,
+  "الأطباق الشرقية":OFFICIAL_IMAGES.about,"الإيطالي":OFFICIAL_IMAGES.about,"الوجبة الأطفال":OFFICIAL_IMAGES.times,
+  "البطاطا المقلية":OFFICIAL_IMAGES.about,"السلطات":OFFICIAL_IMAGES.about,"الشوربة":OFFICIAL_IMAGES.about
+};
+const branchPhones={
+ "الجزائر":"07711111828","بصرة تايمز سكوير":"07729292929","الجبيلة":"07729292929","الزبير":"07719523849"
+};
+const branchMaps={
+ "الجزائر":"https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Basrah",
+ "بصرة تايمز سكوير":"https://www.google.com/maps/search/?api=1&query=Basra+Times+Square+Mall",
+ "الجبيلة":"https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Jubaila+Basrah",
+ "الزبير":"https://www.google.com/maps/search/?api=1&query=AlTazaj+Snack+Al+Zubair+Basrah"
+};
+let cat="الكل",cart=[],selectedBranch="الجزائر";
 const cats=["الكل",...new Set(products.map(p=>p.cat))];
 
-function money(n){return Number(n).toLocaleString("ar-IQ")+" د.ع"}
-
+function money(n){return Number(n).toLocaleString("ar-IQ")+" د.ع";}
+function imageFor(p){return CATEGORY_IMAGES[p.cat]||OFFICIAL_IMAGES.default;}
 function chips(){
-  document.getElementById("chips").innerHTML=cats.map(c=>
-    '<button class="chip '+(c===cat?'active':'')+'" onclick="setCat('+JSON.stringify(c)+')">'+c+'</button>'
-  ).join("");
+  const el=document.getElementById("chips"); if(!el)return;
+  el.innerHTML=cats.map(c=>'<button class="chip '+(c===cat?'active':'')+'" type="button" onclick="setCat('+JSON.stringify(c)+')">'+c+'</button>').join("");
 }
-
-function setCat(c){cat=c;chips();renderMenu()}
-function focusCategory(c){setCat(c);document.getElementById("menu").scrollIntoView({behavior:"smooth",block:"start"})}
-
+function setCat(c){cat=c;chips();renderMenu();}
+function focusCategory(c){setCat(c);document.getElementById("menu").scrollIntoView({behavior:"smooth"});}
 function renderMenu(){
-  const q=document.getElementById("search").value.trim().toLowerCase();
+  const input=document.getElementById("search");
+  const q=(input?.value||"").trim().toLowerCase();
   const list=products.filter(p=>(cat==="الكل"||p.cat===cat)&&(!q||p.name.toLowerCase().includes(q)));
   document.getElementById("menuGrid").innerHTML=list.map(p=>{
     const variable=p.price===null;
-    return '<article class="item">'+
-      '<div class="item-img"><img src="'+categoryImage(p.cat)+'" alt="'+p.name+'" loading="lazy"><span class="price '+(variable?"variable":"")+'">'+(variable?"حسب الاختيار":money(p.price))+'</span><span class="photo-tag">صورة من هوية المطعم</span></div>'+
-      '<div class="item-body"><h3>'+p.name+'</h3><p>'+p.desc+'</p>'+
-      (variable?
-        '<button class="info" type="button" onclick="askVariable('+p.id+')">اطلبها عبر واتساب ↗</button>':
-        '<button class="add" type="button" onclick="addToCart('+p.id+')">أضف للطلب +</button>')+
-      '</div></article>';
-  }).join("")||'<p class="empty">ما لقينا صنف بهذا الاسم.</p>';
+    return '<article class="menu-row"><div class="menu-avatar"><img src="'+imageFor(p)+'" alt="" loading="lazy"></div>'+
+      '<div class="menu-copy"><div class="menu-title"><h3>'+p.name+'</h3><i></i><b class="menu-price '+(variable?'variable':'')+'">'+(variable?"حسب الاختيار":money(p.price))+'</b></div>'+
+      '<p>'+p.desc+'</p><span class="menu-cat">'+p.cat+'</span></div>'+
+      (variable?'<button class="line-btn ghost" type="button" onclick="showVariable()">اختيار</button>':'<button class="line-btn" type="button" onclick="addToCart('+p.id+')">أضف <strong>+</strong></button>')+
+      '</article>';
+  }).join("")||'<div class="empty">ما لقينا صنف بهذا الاسم.</div>';
 }
-
+function showVariable(){toast("هذا الصنف يحتاج تحديد الحجم أو الخيار من إدارة المطعم قبل تثبيت سعره.");}
 function addToCart(id){
-  const p=products.find(x=>x.id===id);
-  if(!p||p.price===null)return;
-  const f=cart.find(x=>x.id===id);
-  f?f.qty++:cart.push({...p,qty:1});
-  updateCart();
-  openCart();
+  const p=products.find(x=>x.id===id); if(!p||p.price===null)return;
+  const f=cart.find(x=>x.id===id); f?f.qty++:cart.push({...p,qty:1});
+  updateCart();openCart();
 }
-
 function changeQty(id,delta){
-  const f=cart.find(x=>x.id===id);
-  if(!f)return;
-  f.qty+=delta;
-  if(f.qty<=0)cart=cart.filter(x=>x.id!==id);
-  updateCart();
+  const f=cart.find(x=>x.id===id); if(!f)return;
+  f.qty+=delta; if(f.qty<=0)cart=cart.filter(x=>x.id!==id); updateCart();
 }
-
 function updateCart(){
-  document.getElementById("cartCount").textContent=cart.reduce((a,x)=>a+x.qty,0);
-  document.getElementById("cartItems").innerHTML=cart.length?cart.map(x=>
-    '<div class="row">'+
-      '<div><b>'+x.name+'</b><small>'+money(x.price)+' للوحدة</small>'+
-      '<div class="row-actions"><button class="qty-btn" type="button" onclick="changeQty('+x.id+',-1)">−</button><span>'+x.qty+'</span><button class="qty-btn" type="button" onclick="changeQty('+x.id+',1)">+</button></div></div>'+
-      '<b>'+money(x.price*x.qty)+'</b>'+
-    '</div>'
-  ).join(""):"<p style='color:#777'>السلة فارغة حالياً.</p>";
-  document.getElementById("cartTotal").textContent=money(cart.reduce((a,x)=>a+x.price*x.qty,0));
-  document.getElementById("selectedBranch").textContent="الفرع: "+(selectedBranch||"غير محدد");
+  const count=document.getElementById("cartCount"); if(count)count.textContent=cart.reduce((a,x)=>a+x.qty,0);
+  const total=cart.reduce((a,x)=>a+x.price*x.qty,0), totalEl=document.getElementById("cartTotal"); if(totalEl)totalEl.textContent=money(total);
+  const branchEl=document.getElementById("selectedBranch"); if(branchEl)branchEl.textContent="الفرع: "+selectedBranch;
+  const items=document.getElementById("cartItems"); if(!items)return;
+  items.innerHTML=cart.length?cart.map(x=>'<div class="cart-line"><div><b>'+x.name+'</b><small>'+money(x.price)+' للوحدة</small><div class="qty"><button type="button" onclick="changeQty('+x.id+',-1)">−</button><span>'+x.qty+'</span><button type="button" onclick="changeQty('+x.id+',1)">+</button></div></div><strong>'+money(x.price*x.qty)+'</strong></div>').join(""):'<div class="cart-empty">السلة فارغة حالياً.</div>';
 }
-
-function openCart(){document.getElementById("cartPanel").classList.add("open");document.getElementById("cartPanel").setAttribute("aria-hidden","false")}
-function closeCart(){document.getElementById("cartPanel").classList.remove("open");document.getElementById("cartPanel").setAttribute("aria-hidden","true")}
-function toggleNav(){document.getElementById("mobileNav").classList.toggle("open")}
-
-function selectBranch(branch){
-  selectedBranch=branch;
-  document.getElementById("branchSelect").value=branch;
-  updateCart();
-  document.getElementById("menu").scrollIntoView({behavior:"smooth",block:"start"});
+function setBranch(branch){
+  selectedBranch=branch; updateCart();
+  document.querySelectorAll(".branch-card").forEach(x=>x.classList.toggle("active",x.dataset.branch===branch));
+  toast("تم اختيار فرع "+branch);
 }
-
-function syncBranch(branch){selectedBranch=branch;updateCart()}
-
-function askVariable(id){
-  const p=products.find(x=>x.id===id);
-  const text="السلام عليكم، أريد الاستفسار/الطلب عن صنف: "+p.name+" من الطازج سناك.";
-  window.open("https://wa.me/9647711111828?text="+encodeURIComponent(text),"_blank","noopener");
+function openCart(){document.getElementById("cartPanel").classList.add("open");document.body.classList.add("locked");updateCart();}
+function closeCart(){document.getElementById("cartPanel").classList.remove("open");document.body.classList.remove("locked");}
+function toggleNav(){document.getElementById("mobileNav").classList.toggle("open");}
+function toggleSearch(){
+  const p=document.getElementById("searchPanel"); p.classList.toggle("open");
+  document.getElementById("search")?.focus();
 }
-
 function openOrderForm(){
-  if(!cart.length){alert("السلة فارغة حالياً.");return}
-  document.getElementById("branchSelect").value=selectedBranch||"";
-  document.getElementById("orderModal").classList.add("open");
-  document.getElementById("orderModal").setAttribute("aria-hidden","false");
+  if(!cart.length){toast("السلة فارغة حالياً.");return}
+  document.getElementById("branchSelect").value=selectedBranch;
+  document.getElementById("orderModal").classList.add("open"); document.body.classList.add("locked");
 }
-
-function closeOrderForm(){
-  document.getElementById("orderModal").classList.remove("open");
-  document.getElementById("orderModal").setAttribute("aria-hidden","true");
-}
-
-function sendWhatsAppOrder(){
-  if(!cart.length){alert("السلة فارغة حالياً.");return}
-  const name=document.getElementById("customerName").value.trim();
-  const phone=document.getElementById("customerPhone").value.trim();
-  const branch=document.getElementById("branchSelect").value;
-  const address=document.getElementById("customerAddress").value.trim();
-  const notes=document.getElementById("customerNotes").value.trim();
-  if(!name||!phone||!branch||!address){
-    alert("رجاءً كمل الاسم ورقم الهاتف والفرع والعنوان.");
-    return;
-  }
-  selectedBranch=branch;
-  updateCart();
-  const total=cart.reduce((a,x)=>a+x.price*x.qty,0);
+function closeOrderForm(){document.getElementById("orderModal").classList.remove("open");document.body.classList.remove("locked");}
+function copyOrder(){
+  if(!cart.length){toast("السلة فارغة حالياً.");return}
   const lines=cart.map(x=>"• "+x.name+" × "+x.qty+" = "+money(x.price*x.qty)).join("\n");
-  const msg=
-    "طلب جديد - الطازج سناك\n"+
-    "--------------------\n"+
-    "الاسم: "+name+"\n"+
-    "الهاتف: "+phone+"\n"+
-    "الفرع: "+branch+"\n"+
-    "العنوان: "+address+"\n"+
-    (notes?"ملاحظات: "+notes+"\n":"")+
-    "--------------------\n"+
-    lines+"\n"+
-    "--------------------\n"+
-    "المجموع: "+money(total);
-  window.open("https://wa.me/9647711111828?text="+encodeURIComponent(msg),"_blank","noopener");
+  const t="طلب الطازج سناك\nالفرع: "+selectedBranch+"\n"+lines+"\nالمجموع: "+money(cart.reduce((a,x)=>a+x.price*x.qty,0));
+  navigator.clipboard?.writeText(t).then(()=>toast("تم نسخ تفاصيل الطلب."),()=>toast("افتح الطلب من السلة وانسخه يدوياً."));
 }
-
-chips();renderMenu();updateCart();
+function callBranch(){const n=branchPhones[selectedBranch]; if(n)window.location.href="tel:+964"+n.slice(1);}
+function sendOrder(){
+  if(!cart.length){toast("السلة فارغة حالياً.");return}
+  const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim(),address=document.getElementById("customerAddress").value.trim(),branch=document.getElementById("branchSelect").value;
+  if(!name||!phone||!address||!branch){toast("رجاءً كمل البيانات المطلوبة.");return}
+  selectedBranch=branch;
+  const lines=cart.map(x=>"• "+x.name+" × "+x.qty+" = "+money(x.price*x.qty)).join("\n");
+  const t="طلب جديد - الطازج سناك\nالاسم: "+name+"\nالهاتف: "+phone+"\nالفرع: "+branch+"\nالعنوان: "+address+"\n"+lines+"\nالمجموع: "+money(cart.reduce((a,x)=>a+x.price*x.qty,0));
+  navigator.clipboard?.writeText(t);
+  closeOrderForm(); openCart(); toast("تم تجهيز الطلب ونسخه. اتصل بالفرع لإرساله.");
+}
+function toast(msg){
+  const el=document.getElementById("toast"); if(!el)return;
+  el.textContent=msg;el.classList.add("show");clearTimeout(window.__toast);
+  window.__toast=setTimeout(()=>el.classList.remove("show"),3200);
+}
+function setActiveNav(){
+ const links=[...document.querySelectorAll("[data-nav]")],ids=["home","menu","offers","branches","about"],y=window.scrollY+170;
+ let current="home";ids.forEach(id=>{const el=document.getElementById(id);if(el&&el.offsetTop<=y)current=id;});
+ links.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+current));
+}
+document.addEventListener("DOMContentLoaded",()=>{
+ const input=document.getElementById("search");
+ input?.addEventListener("input",renderMenu);
+ input?.addEventListener("keydown",e=>{if(e.key==="Escape"){input.value="";document.getElementById("searchPanel").classList.remove("open");renderMenu();}});
+ document.getElementById("branchSelect")?.addEventListener("change",e=>setBranch(e.target.value));
+ chips();renderMenu();updateCart();setActiveNav();
+});
+window.addEventListener("scroll",setActiveNav,{passive:true});
