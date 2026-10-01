@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>الطازج سناك | طعمك على مزاجك</title>
+<meta name="description" content="نموذج تجريبي لموقع الطازج سناك متعدد الفروع">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="brand" href="#home"><span class="brand-mark">ط</span><span><b>الطازج</b><small>سناك</small></span></a>
+<nav><a href="#home">الرئيسية</a><a href="#menu">المنيو</a><a href="#offers">العروض</a><a href="#branches">الفروع</a></nav>
+<button class="cart-btn" onclick="openCart()">السلة <span id="cartCount">0</span></button>
+</header>
+<main>
+<section id="home" class="hero">
+<div class="hero-copy"><span class="eyebrow">من البصرة إلى مزاجك</span><h1>الجوع إله<br><span>حل واحد.</span></h1><p>وجبات تحبها، نكهة تعرفها، وتجربة طلب أسرع من قبل.</p>
+<div class="hero-actions"><a class="btn primary" href="#menu">استكشف المنيو ←</a><a class="btn ghost" href="#branches">أقرب فرع</a></div>
+<div class="stats"><div><strong>4</strong><small>فروع</small></div><div><strong>25+</strong><small>صنف</small></div><div><strong>2008</strong><small>من البصرة</small></div></div></div>
+<div class="hero-art"><div class="glow"></div><div class="food-card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85" alt="برجر"><div class="food-label"><span>الأكثر طلباً</span><b>كلاسيك برجر</b><small>4,500 د.ع</small></div></div><div class="floating"><b>🔥 طازج دائماً</b><small>حضّرناه إلك</small></div></div>
+</section>
+<section id="offers" class="section dark-section"><div class="head"><div><span class="kicker">لا تفوّت الفرصة</span><h2>عروض اليوم</h2></div><a href="#menu">شوف المنيو ←</a></div>
+<div class="offer-grid"><article class="offer main-offer"><img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=85" alt="ساندويج"><div><span>عرض مميز</span><h3>فاهيتا<br>مرتين أحلى</h3><p>اكتشف عروض الطازج الخاصة.</p><button class="small-btn" onclick="scrollToMenu()">اطلب العرض</button></div></article>
+<article class="offer red"><div><span>اختيارك</span><h3>مزاجك،<br>وجبتك.</h3><p>اختار من تشكيلتنا وخلي الباقي علينا.</p><a href="#menu">استكشف ←</a></div></article></div></section>
+<section id="menu" class="section light-section"><div class="head"><div><span class="kicker">كل اللي تشتهيه</span><h2>المنيو</h2></div><div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن وجبتك..." oninput="renderMenu()"></div></div>
+<div id="chips" class="chips"></div><div id="menuGrid" class="menu-grid"></div></section>
+<section id="branches" class="section dark-section"><div class="head"><div><span class="kicker">قريبين منك</span><h2>فروعنا</h2></div><p>اختار الفرع الأقرب إلك.</p></div>
+<div class="branch-grid">
+<article class="branch"><strong>01</strong><div><h3>الفرع الرئيسي</h3><p>الجزائر — مقابل مستشفى ابن غزوان للولادة</p></div><a href="#" onclick="return false">الاتجاهات ↗</a></article>
+<article class="branch"><strong>02</strong><div><h3>مول بصرة تايمز سكوير</h3><p>داخل مول بصرة تايمز سكوير</p></div><a href="#" onclick="return false">الاتجاهات ↗</a></article>
+<article class="branch"><strong>03</strong><div><h3>فرع الجبيلة</h3><p>الجبيلة — مقابل شارع شهادة الجنسية</p></div><a href="#" onclick="return false">الاتجاهات ↗</a></article>
+<article class="branch"><strong>04</strong><div><h3>فرع الزبير</h3><p>الزبير</p></div><a href="#" onclick="return false">الاتجاهات ↗</a></article>
+</div></section>
+<section class="cta"><div><span>جاهز؟</span><h2>خلّي وجبتك<br><em>تبدأ هسه.</em></h2></div><a class="btn white" href="#menu">ابدأ طلبك ←</a></section>
+</main>
+<footer class="footer"><div class="brand"><span class="brand-mark">ط</span><span><b>الطازج</b><small>سناك</small></span></div><p>نموذج تجريبي لتطوير تجربة الطازج سناك الرقمية.</p><span>© 2026</span></footer>
+<div class="cart-panel" id="cartPanel"><div class="backdrop" onclick="closeCart()"></div><aside class="cart"><button class="close" onclick="closeCart()">×</button><span class="kicker">طلبك</span><h2>سلة المشتريات</h2><div id="cartItems"></div><div class="total"><span>المجموع</span><b id="cartTotal">0 د.ع</b></div><button class="btn primary full" onclick="alert('هذا نموذج تجريبي — لاحقاً نربطه بالطلب الحقيقي.')">متابعة الطلب</button></aside></div>
+<script src="script.js"></script></body></html>
